@@ -1,0 +1,35 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.contact-image-container {
+    flex-basis: auto;
+    margin-right: 50px;
+}
+
+.contact-image-container img {
+    display: block;
+    height: auto;
+    background-color: transparent;
+    width: 600px; /* Set the width of the image to 400px */
+}
+
+.contact-description-container {
+    flex-basis: 60%;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact-description {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
