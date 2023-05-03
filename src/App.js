@@ -5,6 +5,9 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import './css/App.css';
+import { Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 function App() {
     useEffect(() => {
@@ -23,26 +26,16 @@ export default App;
 
 class Page extends React.Component {
     render() {
-        let page = <About />;
-
-        if (window.location.pathname === '/About') {
-            page = <About />;
-        } else if (window.location.pathname === '/Home') {
-            page = <About />;
-        }
-        else if (window.location.pathname === '/Projects') {
-            page = <Projects />;
-        }
-
-        else if (window.location.pathname === '/Contact') {
-            page = <Contact />;
-        }
-
         return (
             <div>
                 <Navbar />
                 <div style={{ marginBottom: '10em' }}>
-                    {page}
+                        <Routes>
+                            <Route exact path="/" element={<About />} />
+                            <Route path="/home" element={<About />} />
+                            <Route path="/projects" element={<Projects />} />
+                            <Route path="/contact" element={<Contact />} />
+                        </Routes>
                 </div>
                 <Footer />
             </div>
