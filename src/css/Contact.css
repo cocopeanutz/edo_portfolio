@@ -1,5 +1,6 @@
 .contact-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -9,27 +10,47 @@
 .contact-image-container {
     flex-basis: auto;
     margin-right: 50px;
+    flex-shrink: 0;
 }
 
 .contact-image-container img {
     display: block;
     height: auto;
     background-color: transparent;
-    width: 600px; /* Set the width of the image to 400px */
+    width: 400px;
+    max-width: 100%;
 }
 
 .contact-description-container {
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
 .contact-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
 .contact-description {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contact-image-container {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .contact-image-container img {
+        max-height: 400px;
+    }
+    .contact-description-container {
+        flex-basis: 100%;
+    }
 }
