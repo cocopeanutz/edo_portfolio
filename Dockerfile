@@ -9,12 +9,11 @@ RUN apt-get install -y apache2 && \
     rm -rf /var/lib/apt/lists/*
 
 # Clone the GitHub repository
-RUN apt-get install -y git && \
+RUN apt-get update && apt-get install -y git && \
     git clone https://github.com/cocopeanutz/edo_portfolio.git
 
 # Install Node.js and NPM
-RUN apt-get install -y nodejs npm && \
-    ln -s /usr/bin/nodejs /usr/bin/node
+RUN apt-get install -y nodejs npm
 
 # Set the working directory to the cloned repo
 WORKDIR /edo_portfolio/

@@ -5,14 +5,23 @@ function Projects() {
     return (
         <section>
             <h2>Education</h2>
-            Nanyang Technological University, Singapore 2017-2021
+            <p>Nanyang Technological University, Singapore 2017-2021</p>
             <h2>Job History</h2>
             <ul>
                 <li>
                     <h3>Silicon Labs - Validation Engineer (Jun 2021 - Mar 2023) </h3>
-
-                    <p>Write python and firmware codes to execute and analyze the results of various peripheral test for EFR family chips including not limited to DAC, ADC, UART, power-saving mechanism, and etc. The python code is used to control electrical instruments and the automation flow of the tests. The measurement instruments include power supply, oscilloscope, switch board, frequency counter, arbitrary wave generator, etc. While the automation is in the form of robotics. On the other hand, the firmware is used to program the chip itself.</p>
-                    <p>Upgrading automation of validation flow by designing PCB board which unlock new capability to allow further automation. PCB have been rolled out and tested.</p>
+                    <p>Main job includes validating the EFR family SOC chips.</p>
+                    <br></br>
+                    <p>To conduct tests on EFR family chips, I need to write both Python and firmware codes.
+                        These codes enabled the execution and analysis of various peripheral tests, such as DAC, ADC, UART, power-saving mechanisms, and more.
+                        Python will be used to control the measurement instruments and test flow automation, which is in the form of robotics.
+                        On the other hand, firmware will be used to program the chip itself.</p>
+                    <br></br>
+                    <p>To further enhance the automation of the validation flow, I have designed a PCB board that unlocks new capabilities and allows for even more automation.
+                        This board has already been rolled out and tested.</p>
+                    <br></br>
+                    <p>The measurement instruments that is used include power supply, oscilloscope, switch board, frequency counter, arbitrary wave generator, and others.
+                        Additional duty includes fixing hardware issues, which can range from fixing linear actuator, soldering, and duct-taping stuff.</p>
                 </li>
                 <li>
                     <h3>Whizz Mobility - Embedded Engineer Intern (Jan 2020 - Aug 2020)</h3>
