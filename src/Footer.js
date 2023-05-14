@@ -9,7 +9,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="container">
-                <span className="text-muted">Phone: (+65) 93550370 | Email: edobiasa@gmail.com | © {year} edjayaku2.com</span>
+                <span className="text-muted">Phone: (+65) 93550370 | Email: edobiasa@gmail.com | © {year} edjayaku.com</span>
             </div>
         </footer>
     );
